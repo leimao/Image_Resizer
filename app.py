@@ -113,7 +113,7 @@ def upload():
             session['filename'] = filename
             session['params'] = params
             
-            # Redirect the user to the uploaded_file route '/uploads/<filename>' (see function uploaded_file() below)
+            # Redirect the user to the resize_image route
             return redirect(url_for('resize_image'))
 
 # This route is expecting a parameter containing the name
